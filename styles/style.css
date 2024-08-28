@@ -1,0 +1,89 @@
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F3F5FC;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Encabezado */
+h2 {
+    color: #0044cc;
+    margin-bottom: 20px;
+}
+
+/* Estilo para la etiqueta y el input */
+label {
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: block;
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 300px;
+    border: 2px solid #0044cc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+/* Botones */
+button {
+    display: flex;
+    background-color: #0044cc;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #003399;
+}
+
+button:active {
+    background-color: #0A3871;
+}
+
+/* Estilo para el área de resultado */
+h3 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: #0044cc;
+}
+
+p#output {
+    background-color: #fff;
+    padding: 15px;
+    border: 2px solid #0044cc;
+    border-radius: 5px;
+    width: 300px;
+    min-height: 50px;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    font-size: 16px;
+}
+
+/* Ajustes responsivos */
+@media (max-width: 400px) {
+    input[type="text"],
+    p#output {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
